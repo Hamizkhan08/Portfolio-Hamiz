@@ -14,76 +14,94 @@ export default function Contact() {
     };
 
     return (
-        <section id="contact" className="min-h-screen py-20 w-full bg-secondary/20 relative overflow-hidden">
-            <div className="absolute inset-0 opacity-[0.03]"></div>
-
+        <section id="contact" className="min-h-screen py-20 w-full bg-background relative overflow-hidden">
             <div className="max-w-4xl mx-auto px-6 relative z-10">
                 <FadeIn>
-                    <div className="text-center mb-12">
-                        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Get In Touch</h2>
-                        <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+                    <div className="text-center mb-16">
+                        <span className="font-mono inline-block px-3 py-1.5 text-xs font-black tracking-wider uppercase bg-foreground text-background border-2 border-foreground mb-4 select-none">
+                            Get In Touch
+                        </span>
+                        <h2 className="text-4xl md:text-5xl font-black tracking-tight text-foreground select-none uppercase font-mono mb-4">Contact Me</h2>
+                        <div className="w-20 h-1.5 bg-foreground mx-auto mb-4" />
+                        <p className="text-md sm:text-lg text-muted-foreground max-w-2xl mx-auto font-medium">
                             I'm currently looking for new opportunities. Whether you have a question, a project to discuss, or just want to say hi, I'll try my best to get back to you!
                         </p>
                     </div>
                 </FadeIn>
 
-                <div className="grid md:grid-cols-2 gap-8 items-stretch">
+                <div className="grid md:grid-cols-2 gap-10 items-stretch">
+                    
+                    {/* Left Card: Send Email Block */}
                     <FadeIn delay={0.2} direction="right">
-                        <div className="bg-card p-8 h-full rounded-2xl shadow-sm border border-border flex flex-col justify-center items-center text-center hover:shadow-md transition-shadow">
-                            <div className="bg-sky-50 dark:bg-sky-900/20 p-4 rounded-full mb-4">
-                                <MdEmail className="w-8 h-8 text-sky-600" />
+                        <div className="bg-card text-foreground p-8 h-full rounded-none border-4 border-foreground shadow-[6px_6px_0px_var(--foreground)] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[10px_10px_0px_var(--foreground)] active:translate-x-0 active:translate-y-0 active:shadow-[6px_6px_0px_var(--foreground)] transition-all duration-300 flex flex-col justify-center items-center text-center">
+                            <div className="bg-foreground/5 p-4 border-3 border-foreground rounded-none mb-6">
+                                <MdEmail className="size-10 text-foreground" />
                             </div>
-                            <h3 className="text-xl font-bold text-foreground mb-2">Send me an email</h3>
-                            <p className="text-muted-foreground mb-6">
-                                The best way to reach me. I reply within 24 hours.
+                            <h3 className="text-2xl font-black mb-3">Send me an email</h3>
+                            <p className="text-muted-foreground font-medium text-sm leading-relaxed mb-8 max-w-sm">
+                                The best way to reach me. I typically respond within 24 hours.
                             </p>
                             <a 
                                 href={`mailto:${email}`}
-                                className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-sky-600 rounded-lg hover:bg-sky-700 transition-colors w-full sm:w-auto"
+                                className="w-full sm:w-auto cursor-pointer border-3 border-foreground bg-card text-foreground font-mono text-sm sm:text-base font-bold uppercase tracking-wider px-8 py-3.5 rounded-none shadow-[4px_4px_0px_var(--foreground)] hover:bg-foreground hover:text-background hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[8px_8px_0px_var(--foreground)] active:translate-x-0 active:translate-y-0 active:shadow-none transition-all text-center flex items-center justify-center gap-2"
                             >
-                                Say Hello
+                                Say Hello &gt;
                             </a>
                         </div>
                     </FadeIn>
+                    
+                    {/* Right Card: Interactive Command Console Terminal Block */}
                     <FadeIn delay={0.4} direction="left">
-                        <div className="bg-slate-900 p-8 h-full rounded-2xl shadow-lg flex flex-col justify-center relative overflow-hidden group">
-                            <div className="absolute -top-10 -right-10 w-32 h-32 bg-sky-500/20 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <div className="bg-card text-foreground p-8 h-full rounded-none border-4 border-foreground shadow-[6px_6px_0px_var(--foreground)] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[10px_10px_0px_var(--foreground)] active:translate-x-0 active:translate-y-0 active:shadow-[6px_6px_0px_var(--foreground)] transition-all duration-300 flex flex-col justify-center">
                             
-                            <div className="flex items-center gap-2 mb-6 text-slate-400 font-mono text-sm border-b border-slate-800 pb-4">
-                                <FaTerminal size={16} />
-                                <span>terminal</span>
+                            {/* Retro Console Header */}
+                            <div className="flex items-center gap-2 mb-6 text-foreground font-mono text-xs border-b-3 border-foreground pb-4 select-none">
+                                <FaTerminal size={14} className="animate-pulse" />
+                                <span className="font-bold uppercase tracking-wider">sh_terminal</span>
                             </div>
 
-                            <div className="space-y-4 font-mono">
-                                <div className="text-slate-300">
-                                    <span className="text-emerald-400">➜</span> <span className="text-sky-400">~</span> git clone contact-info
+                            <div className="space-y-6 font-mono">
+                                <div className="text-foreground/90 font-bold text-sm select-none">
+                                    <span className="text-foreground/60 mr-2">➜</span><span className="text-foreground/80">~</span> git clone contact-info
                                 </div>
                                 
-                                <div className="bg-slate-800/50 p-4 rounded-lg flex items-center justify-between group/cmd hover:bg-slate-800 transition-colors border border-slate-700/50">
-                                    <code className="text-slate-300 text-sm break-all">
+                                {/* Copy Box Command Target */}
+                                <div className="bg-foreground/5 p-4 border-2 border-foreground flex items-center justify-between hover:bg-foreground/10 transition-colors">
+                                    <code className="text-foreground font-bold text-xs sm:text-sm break-all">
                                         {email}
                                     </code>
                                     <button 
                                         onClick={handleCopy}
-                                        className="p-2 ml-2 rounded-md hover:bg-slate-700 text-slate-400 hover:text-white transition-all relative"
+                                        className="p-2 border-2 border-foreground bg-card text-foreground shadow-[2px_2px_0px_var(--foreground)] hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[3px_3px_0px_var(--foreground)] active:translate-x-0 active:translate-y-0 active:shadow-none transition-all cursor-pointer relative flex items-center justify-center"
                                         title="Copy Email"
                                     >
-                                        {copied ? <FaCheck size={18} className="text-emerald-400" /> : <MdContentCopy size={18} />}
+                                        {copied ? <FaCheck size={14} className="text-foreground" /> : <MdContentCopy size={14} />}
                                         
-                                        <span className={`absolute -top-8 left-1/2 -translate-x-1/2 bg-slate-800 text-white text-xs px-2 py-1 rounded opacity-0 transition-opacity whitespace-nowrap ${copied ? 'opacity-100' : ''}`}>
+                                        <span className={`absolute -top-10 left-1/2 -translate-x-1/2 bg-foreground text-background font-mono text-xs font-black px-2 py-1 border-2 border-foreground opacity-0 transition-opacity whitespace-nowrap select-none ${copied ? 'opacity-100' : ''}`}>
                                             Copied!
                                         </span>
                                     </button>
                                 </div>
 
-                                <div className="flex gap-4 pt-4 mt-2 border-t border-slate-800">
-                                    <a href="https://github.com/Sxein" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors flex items-center gap-2 text-sm">
-                                        <FaGithub size={18} />
-                                        <span>/Sxein</span>
+                                {/* External profile handles */}
+                                <div className="flex flex-wrap gap-4 pt-4 mt-2 border-t-2 border-dashed border-foreground/15">
+                                    <a 
+                                        href="https://github.com/Sxein" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer" 
+                                        className="text-foreground font-black underline underline-offset-4 decoration-2 hover:bg-foreground hover:text-background px-1 transition-all flex items-center gap-2 text-xs"
+                                    >
+                                        <FaGithub size={16} />
+                                        <span>github.com/Sxein</span>
                                     </a>
-                                    <a href="https://www.linkedin.com/in/zayar-shein-980bb6286/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-sky-400 transition-colors flex items-center gap-2 text-sm">
-                                        <FaLinkedin size={20} />
-                                        <span>/in/zayar</span>
+                                    <a 
+                                        href="https://www.linkedin.com/in/zayar-shein-980bb6286/" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer" 
+                                        className="text-foreground font-black underline underline-offset-4 decoration-2 hover:bg-foreground hover:text-background px-1 transition-all flex items-center gap-2 text-xs"
+                                    >
+                                        <FaLinkedin size={16} />
+                                        <span>linkedin.com/in/zayar</span>
                                     </a>
                                 </div>
                             </div>
@@ -91,7 +109,8 @@ export default function Contact() {
                     </FadeIn>
                 </div>
 
-                <footer className="mt-20 text-center text-muted-foreground text-sm">
+                {/* Footer Section */}
+                <footer className="mt-24 text-center font-mono text-xs sm:text-sm font-black border-t-4 border-foreground pt-8 select-none text-muted-foreground uppercase tracking-wider">
                     <p>Copyright © 2026 Zayar Shein. All rights reserved.</p>
                 </footer>
             </div>
