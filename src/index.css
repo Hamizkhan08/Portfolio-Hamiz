@@ -46,73 +46,82 @@
 
 :root {
   --radius: 0.625rem;
-  /* warm off-white background, dark brown foreground */
-  --background: oklch(0.977 0.005 75);
-  --foreground: oklch(0.148 0.012 49);
-  --card: oklch(0.990 0.004 75);
-  --card-foreground: oklch(0.148 0.012 49);
-  --popover: oklch(0.990 0.004 75);
-  --popover-foreground: oklch(0.148 0.012 49);
-  --primary: oklch(0.148 0.012 49);
-  --primary-foreground: oklch(0.977 0.005 75);
-  --secondary: oklch(0.952 0.006 75);
-  --secondary-foreground: oklch(0.22 0.011 49);
-  --muted: oklch(0.952 0.006 75);
-  --muted-foreground: oklch(0.52 0.008 55);
-  --accent: oklch(0.952 0.006 75);
-  --accent-foreground: oklch(0.22 0.011 49);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.908 0.006 70);
-  --input: oklch(0.908 0.006 70);
-  --ring: oklch(0.65 0.008 55);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.965 0.005 75);
-  --sidebar-foreground: oklch(0.148 0.012 49);
-  --sidebar-primary: oklch(0.22 0.011 49);
-  --sidebar-primary-foreground: oklch(0.977 0.005 75);
-  --sidebar-accent: oklch(0.952 0.006 75);
-  --sidebar-accent-foreground: oklch(0.22 0.011 49);
-  --sidebar-border: oklch(0.908 0.006 70);
-  --sidebar-ring: oklch(0.65 0.008 55);
+  /* === Retro Manila Paper (soft cream) === */
+  /* Off-white paper with subtle warm undertones and sepia ink */
+  --background: oklch(0.965 0.012 85);
+  --foreground: oklch(0.24 0.022 55);
+  --card: oklch(0.985 0.008 85);
+  --card-foreground: oklch(0.24 0.022 55);
+  --popover: oklch(0.985 0.008 85);
+  --popover-foreground: oklch(0.24 0.022 55);
+  --primary: oklch(0.28 0.024 55);
+  --primary-foreground: oklch(0.985 0.008 85);
+  --secondary: oklch(0.930 0.016 85);
+  --secondary-foreground: oklch(0.26 0.022 55);
+  --muted: oklch(0.935 0.014 85);
+  --muted-foreground: oklch(0.50 0.018 60);
+  --accent: oklch(0.920 0.020 80);
+  --accent-foreground: oklch(0.26 0.022 55);
+  --destructive: oklch(0.554 0.170 32);
+  --border: oklch(0.840 0.018 78);
+  --input: oklch(0.910 0.016 82);
+  --ring: oklch(0.60 0.024 65);
+  --chart-1: oklch(0.620 0.150 55);
+  --chart-2: oklch(0.560 0.110 95);
+  --chart-3: oklch(0.450 0.080 70);
+  --chart-4: oklch(0.700 0.130 75);
+  --chart-5: oklch(0.520 0.090 50);
+  --sidebar: oklch(0.975 0.010 85);
+  --sidebar-foreground: oklch(0.24 0.022 55);
+  --sidebar-primary: oklch(0.28 0.024 55);
+  --sidebar-primary-foreground: oklch(0.985 0.008 85);
+  --sidebar-accent: oklch(0.930 0.016 85);
+  --sidebar-accent-foreground: oklch(0.26 0.022 55);
+  --sidebar-border: oklch(0.840 0.018 78);
+  --sidebar-ring: oklch(0.60 0.024 65);
+
+  /* Dot matrix pattern tokens */
+  --dot-color: oklch(0.45 0.020 60 / 0.22);
+  --dot-size: 22px;
+  --dot-radius: 1px;
 }
 
 .dark {
-  /* very dark warm-brown background, warm near-white foreground */
-  --background: oklch(0.082 0.008 49);
-  --foreground: oklch(0.982 0.002 85);
-  --card: oklch(0.138 0.009 49);
-  --card-foreground: oklch(0.982 0.002 85);
-  --popover: oklch(0.138 0.009 49);
-  --popover-foreground: oklch(0.982 0.002 85);
-  --primary: oklch(0.908 0.006 70);
-  --primary-foreground: oklch(0.148 0.012 49);
-  --secondary: oklch(0.205 0.009 49);
-  --secondary-foreground: oklch(0.982 0.002 85);
-  --muted: oklch(0.205 0.009 49);
-  --muted-foreground: oklch(0.62 0.007 60);
-  --accent: oklch(0.205 0.009 49);
-  --accent-foreground: oklch(0.982 0.002 85);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.52 0.008 55);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.138 0.009 49);
-  --sidebar-foreground: oklch(0.982 0.002 85);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.982 0.002 85);
-  --sidebar-accent: oklch(0.205 0.009 49);
-  --sidebar-accent-foreground: oklch(0.982 0.002 85);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.52 0.008 55);
+  /* Aged espresso / leather-bound journal */
+  --background: oklch(0.180 0.022 50);
+  --foreground: oklch(0.920 0.030 82);
+  --card: oklch(0.220 0.024 50);
+  --card-foreground: oklch(0.920 0.030 82);
+  --popover: oklch(0.220 0.024 50);
+  --popover-foreground: oklch(0.920 0.030 82);
+  --primary: oklch(0.880 0.038 82);
+  --primary-foreground: oklch(0.180 0.022 50);
+  --secondary: oklch(0.260 0.024 50);
+  --secondary-foreground: oklch(0.920 0.030 82);
+  --muted: oklch(0.260 0.024 50);
+  --muted-foreground: oklch(0.66 0.022 70);
+  --accent: oklch(0.300 0.030 55);
+  --accent-foreground: oklch(0.920 0.030 82);
+  --destructive: oklch(0.665 0.180 25);
+  --border: oklch(0.92 0.030 82 / 14%);
+  --input: oklch(0.92 0.030 82 / 18%);
+  --ring: oklch(0.55 0.040 70);
+  --chart-1: oklch(0.620 0.150 55);
+  --chart-2: oklch(0.560 0.110 95);
+  --chart-3: oklch(0.700 0.130 75);
+  --chart-4: oklch(0.520 0.090 50);
+  --chart-5: oklch(0.450 0.080 70);
+  --sidebar: oklch(0.220 0.024 50);
+  --sidebar-foreground: oklch(0.920 0.030 82);
+  --sidebar-primary: oklch(0.880 0.038 82);
+  --sidebar-primary-foreground: oklch(0.180 0.022 50);
+  --sidebar-accent: oklch(0.260 0.024 50);
+  --sidebar-accent-foreground: oklch(0.920 0.030 82);
+  --sidebar-border: oklch(0.92 0.030 82 / 14%);
+  --sidebar-ring: oklch(0.55 0.040 70);
+
+  /* Dot matrix pattern tokens (warm cream dots on dark) */
+  --dot-color: oklch(0.85 0.035 80 / 0.10);
 }
 
 @layer base {
@@ -121,6 +130,14 @@
   }
   body {
     @apply bg-background text-foreground;
+    background-image: radial-gradient(
+      circle,
+      var(--dot-color) var(--dot-radius),
+      transparent calc(var(--dot-radius) + 0.5px)
+    );
+    background-size: var(--dot-size) var(--dot-size);
+    background-position: 0 0;
+    background-attachment: fixed;
   }
   button:not(:disabled),
   [role="button"]:not(:disabled) {

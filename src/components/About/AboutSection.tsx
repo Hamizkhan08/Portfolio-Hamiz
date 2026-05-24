@@ -54,7 +54,7 @@ const quickStats = [
 
 export default function About() {
   return (
-    <section id="about" className="md:py-24 py-12 w-full bg-background border-b-4 border-foreground">
+    <section id="about" className="md:py-24 py-12 w-full border-b-4 border-foreground">
       {/* About Me Section */}
       <div className="max-w-6xl mx-auto px-6 sm:px-10">
         <FadeIn>

@@ -14,7 +14,7 @@ export default function Contact() {
     };
 
     return (
-        <section id="contact" className="min-h-screen py-20 w-full bg-background relative overflow-hidden">
+        <section id="contact" className="min-h-screen py-20 w-full relative overflow-hidden">
             <div className="max-w-4xl mx-auto px-6 relative z-10">
                 <FadeIn>
                     <div className="text-center mb-16">

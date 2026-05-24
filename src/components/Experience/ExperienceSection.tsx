@@ -21,7 +21,7 @@ const experiences = [
 
 export default function Experience() {
     return (
-        <section id="experience" className="md:py-24 py-12 w-full bg-background border-b-4 border-foreground">
+        <section id="experience" className="md:py-24 py-12 w-full border-b-4 border-foreground">
             <div className="max-w-4xl mx-auto px-6 sm:px-10">
                 <FadeIn>
                     <div className="text-center mb-20">

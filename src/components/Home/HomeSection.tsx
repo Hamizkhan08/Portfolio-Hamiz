@@ -7,7 +7,7 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
     return (
-        <section id="home" className="min-h-screen flex items-center justify-center bg-background pt-24 pb-12 px-4 md:px-8">
+        <section id="home" className="min-h-screen flex items-center justify-center pt-24 pb-12 px-4 md:px-8">
           <div className="max-w-4xl w-full mx-auto">
             <div className="w-full bg-card border-4 border-foreground shadow-[8px_8px_0px_0px_var(--foreground)] text-foreground overflow-hidden rounded-none transition-all duration-300">
               

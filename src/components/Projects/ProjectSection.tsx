@@ -35,7 +35,7 @@ const projects = [
 
 export default function Projects() {
     return (
-        <section id="projects" className="md:py-24 py-12 w-full bg-background border-b-4 border-foreground">
+        <section id="projects" className="md:py-24 py-12 w-full border-b-4 border-foreground">
              <div className="max-w-6xl mx-auto px-6 sm:px-10">
                 <FadeIn>
                     <div className="text-center mb-20">
