@@ -35,20 +35,24 @@ const projects = [
 
 export default function Projects() {
     return (
-        <section id="projects" className="py-20 w-full">
+        <section id="projects" className="md:py-24 py-12 w-full bg-background border-b-4 border-foreground">
              <div className="max-w-6xl mx-auto px-6 sm:px-10">
                 <FadeIn>
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Featured Projects</h2>
-                        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                    <div className="text-center mb-20">
+                        <span className="font-mono inline-block px-3 py-1.5 text-xs font-black tracking-wider uppercase bg-foreground text-background border-2 border-foreground mb-4 select-none">
+                            My Portfolio
+                        </span>
+                        <h2 className="text-4xl md:text-5xl font-black tracking-tight text-foreground select-none uppercase font-mono mb-4">Featured Projects</h2>
+                        <div className="w-24 h-1.5 bg-foreground mx-auto mb-4" />
+                        <p className="text-md sm:text-lg text-muted-foreground max-w-2xl mx-auto font-medium">
                             A selection of projects where I've turned complex problems into elegant solutions.
                         </p>
                     </div>
                 </FadeIn>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
                     {projects.map((project, index) => (
-                        <FadeIn key={index} delay={index * 0.2}>
+                        <FadeIn key={index} delay={index * 0.15}>
                             <ProjectCard 
                                 {...project}
                             />
