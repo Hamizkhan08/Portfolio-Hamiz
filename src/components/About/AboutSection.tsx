@@ -29,7 +29,6 @@ const educationJourney = [
         },
         degree: "Diploma in Information Technology",
         achievements: {
-            gpa: "3.75",
             honors: [
                 {
                     name: "Diploma with Merit",
@@ -49,39 +48,43 @@ const educationJourney = [
 ];
 
 const quickStats = [
-    { value: "3.75", label: "cGPA", accent: "text-amber-500" },
-    { value: "3×", label: "Academic Honors", accent: "text-cyan-500" },
-    { value: "4+", label: "Years Coding", accent: "text-emerald-500" },
+    { value: "1~", label: "Years of Experience", accent: "text-foreground" },
+    { value: "3×", label: "Academic Honors", accent: "text-foreground" },
+    { value: "4+", label: "Years Coding", accent: "text-foreground" },
 ];
 
 export default function About() {
   return (
-    <section id="about" className="md:py-20 py-10 w-full bg-background">
+    <section id="about" className="md:py-24 py-12 w-full bg-background border-b-4 border-foreground">
       {/* About Me Section */}
-      <div className="max-w-6xl mx-auto px-10">
+      <div className="max-w-6xl mx-auto px-6 sm:px-10">
         <FadeIn>
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">About Me</h2>
+            <h2 className="text-4xl md:text-5xl font-black tracking-tight text-foreground select-none uppercase font-mono">
+              About Me
+            </h2>
+            <div className="w-16 h-2 bg-foreground mx-auto mt-3" />
           </div>
         </FadeIn>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
           <FadeIn direction="right" delay={0.2}>
-            <div className="flex flex-col gap-5 text-left text-foreground">
-              <p className="text-lg leading-relaxed">
-                Full-Stack Developer specializing in <span className="text-cyan-500 dark:text-cyan-400 font-semibold">React, Next.js, and Django</span>. I turn ideas into scalable, production-ready web applications.
+            <div className="flex flex-col gap-6 text-left text-foreground bg-card border-4 border-foreground p-6 sm:p-10 shadow-[8px_8px_0px_0px_var(--foreground)]">
+              <p className="text-lg leading-relaxed font-medium">
+                Full-Stack Developer specializing in <span className="underline underline-offset-4 decoration-2 decoration-foreground font-bold">React, Next.js, Node.js</span>. I turn ideas into scalable, production-ready web applications.
               </p>
-              <p className="text-lg leading-relaxed">
+              <p className="text-lg leading-relaxed font-medium">
                 From medical school in Myanmar to self-taught developer to Singapore's top IT students — I thrive on learning, building, and shipping.
               </p>
 
-              {/* Quick Stats */}
-              <div className="grid grid-cols-3 gap-4 mt-4 pt-6 border-t border-border">
+              {/* Quick Stats - Updated with Neubrutalist boxes */}
+              <div className="grid grid-cols-3 gap-3 mt-4 pt-6 border-t-4 border-foreground">
                 {quickStats.map((stat, i) => (
-                  <div key={i} className="text-center">
-                    <div className={`text-3xl md:text-4xl font-bold ${stat.accent}`}>
+                  <div key={i} className="text-center bg-background border-2 border-foreground p-3 shadow-[3px_3px_0px_0px_var(--foreground)]">
+                    <div className={`text-xl sm:text-2xl font-black ${stat.accent}`}>
                       {stat.value}
                     </div>
-                    <div className="text-xs md:text-sm text-muted-foreground mt-1">
+                    <div className="text-[10px] sm:text-xs font-mono font-black uppercase tracking-tight text-muted-foreground mt-1.5 leading-tight">
                       {stat.label}
                     </div>
                   </div>
@@ -89,12 +92,18 @@ export default function About() {
               </div>
             </div>
           </FadeIn>
+          
           <FadeIn direction="left" delay={0.4}>
             <div className="flex justify-center">
-              <div className="relative w-80 h-96 rounded-2xl overflow-hidden shadow-2xl border border-border group">
-                <img src="/profile.jpeg" alt="Profile" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                {/* Subtle gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent" />
+              {/* Picture Frame Wrapper */}
+              <div className="relative w-80 h-96 bg-card border-4 border-foreground shadow-[10px_10px_0px_0px_var(--foreground)] p-3 select-none">
+                <div className="w-full h-full border-2 border-foreground overflow-hidden">
+                  <img 
+                    src="/profile.jpeg" 
+                    alt="Profile" 
+                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" 
+                  />
+                </div>
               </div>
             </div>
           </FadeIn>
@@ -102,38 +111,38 @@ export default function About() {
       </div>
 
       {/* Education Journey Section */}
-      <div className="max-w-4xl mx-auto mt-24 px-4">
+      <div className="max-w-4xl mx-auto mt-28 px-6 sm:px-10">
         <FadeIn>
-          <div className="text-center mb-12">
-            <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border border-cyan-500/20 mb-4">
+          <div className="text-center mb-16">
+            <span className="font-mono inline-block px-3 py-1.5 text-xs font-black tracking-wider uppercase bg-foreground text-background border-2 border-foreground mb-4 select-none">
               My Journey
             </span>
-            <h2 className="text-4xl font-bold text-foreground mb-4">Education & Growth</h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            <h2 className="text-4xl font-black text-foreground mb-4 uppercase">Education & Growth</h2>
+            <div className="w-24 h-1.5 bg-foreground mx-auto mb-4" />
+            <p className="text-muted-foreground text-md sm:text-lg max-w-2xl mx-auto font-medium">
               An unconventional path — from medicine to code, shaped by resilience and curiosity.
             </p>
           </div>
         </FadeIn>
         
-        {/* Timeline */}
-        <div className="relative">
-          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500/50 via-cyan-500/50 to-teal-500/50 transform md:-translate-x-1/2" />
+        {/* Timeline (Refactored to be thick, solid, and left-aligned for maximum card width) */}
+        <div className="relative max-w-3xl mx-auto">
+          <div className="absolute left-4 sm:left-6 top-0 bottom-0 w-1 bg-foreground" />
           
-          <div className="space-y-8 md:space-y-12">
+          <div className="space-y-10 md:space-y-14">
             {educationJourney.map((edu, index) => (
               <FadeIn 
                 key={index} 
                 delay={index * 0.2}
-                direction={index % 2 === 0 ? "right" : "left"}
+                direction="right"
               >
-                <div className={`relative flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
-                  <div className="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 transform -translate-x-1/2 z-10 shadow-lg shadow-blue-500/30" />
+                <div className="relative flex items-start">
+                  {/* Robust Black Circle Marker */}
+                  <div className="absolute left-4 sm:left-6 w-6 h-6 rounded-full bg-background border-4 border-foreground transform -translate-x-1/2 mt-8 z-10 shadow-[2px_2px_0px_var(--foreground)]" />
                   
-                  <div className={`ml-12 md:ml-0 md:w-[calc(50%-2rem)] ${index % 2 === 0 ? 'md:pr-8' : 'md:pl-8'}`}>
+                  <div className="w-full ml-10 sm:ml-14">
                     <EducationCard {...edu} />
                   </div>
-                  
-                  <div className="hidden md:block md:w-[calc(50%-2rem)]" />
                 </div>
               </FadeIn>
             ))}
