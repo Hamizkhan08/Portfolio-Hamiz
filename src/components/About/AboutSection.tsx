@@ -42,8 +42,7 @@ const educationJourney = [
                 }
             ]
         },
-        description: "Built a strong foundation in software engineering while consistently ranking among the top students.",
-        isHighlight: true
+        description: "Built a strong foundation in software engineering while consistently ranking among the top students."
     }
 ];
 

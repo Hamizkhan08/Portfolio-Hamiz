@@ -43,9 +43,9 @@ export default function EducationCard({ year, title, institution, degree, achiev
                 ${isHighlight ? 'ring-4 ring-offset-2 ring-foreground/20' : ''}
             `}>
                 
-                <div className="relative z-10 flex flex-col gap-3">
-                    {/* Year + Current Badge */}
-                    <div className="flex items-center gap-3">
+                <div className="relative z-10 flex flex-col gap-3 pr-2 sm:pr-32">
+                    {/* Year + Current Badge (Positioned at Top-Right Corner) */}
+                    <div className="sm:absolute sm:top-0 sm:right-0 flex items-center gap-2 mb-2 sm:mb-0 sm:translate-y-[-2px]">
                         <span className="font-mono text-xs font-black tracking-widest uppercase bg-foreground/10 px-2 py-1 border-2 border-foreground select-none">
                             {year}
                         </span>
@@ -128,6 +128,7 @@ export default function EducationCard({ year, title, institution, degree, achiev
                             ))}
                         </div>
                     )}
+
                     {/* Short Description */}
                     <div className="w-full h-1 bg-foreground/10 my-1" />
                     <p className="text-md text-foreground/80 leading-relaxed font-medium">
