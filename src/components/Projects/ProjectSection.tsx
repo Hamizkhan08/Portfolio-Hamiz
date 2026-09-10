@@ -21,6 +21,7 @@ const projects = [
         title: "Blinkit Sales & Operations Dashboard",
         description: "Interactive Power BI dashboard analyzing $1.20M in sales and 8,523 transactions. Engineered 8+ DAX KPIs to track sales performance, outlet tier profitability, and consumer preferences.",
         technologies: ["Power BI", "DAX", "Excel", "Data Analytics", "Data Visualization"],
+        githubLink: "https://github.com/Hamizkhan08/Blinkit-Dashboard",
         image: "/images/projects/blinkit_dashboard.png"
     },
     {
@@ -33,8 +34,15 @@ const projects = [
         title: "Nutrifusion: Fitness & Nutrition Recommendation System",
         description: "AI-driven personalized health management system calculating daily caloric requirements, macro breakdowns, and generating customized weekly workout and meal plans.",
         technologies: ["Python", "Machine Learning", "Streamlit", "Pandas", "Scikit-Learn"],
-        githubLink: "https://github.com/Hamizkhan08/Nutrifusion-Personalized-Fitness-and-Nutrition-Recommendation-System",
+        liveLink: "https://nutrifusion-personalized-fitness-an.vercel.app/",
         image: "/images/projects/nutrifusion.png"
+    },
+    {
+        title: "BloodConnect: Emergency Blood Donor Finder & Management",
+        description: "Real-time emergency blood donor matching platform featuring Leaflet.js spatial donor heatmaps, Chart.js blood reserve analytics, compatibility engine, and automated SQLite/MySQL failover.",
+        technologies: ["Python", "Flask", "SQLite", "Leaflet.js", "Chart.js", "Tailwind CSS", "JavaScript"],
+        liveLink: "https://blood-connect-app-one.vercel.app/",
+        image: "/images/projects/bloodconnect.png"
     }
 ];
 
