@@ -1115,8 +1115,105 @@ const Flask = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export { Expressjs, Nextjs, TypeScript, JavaScript ,
+const PowerBI = (props: SVGProps<SVGSVGElement>) => (
+  <svg {...props} viewBox="0 0 24 24" fill="none">
+    <rect x="3" y="12" width="4" height="9" rx="1" fill="#F2C811" />
+    <rect x="10" y="7" width="4" height="14" rx="1" fill="#F2C811" />
+    <rect x="17" y="3" width="4" height="18" rx="1" fill="#F2C811" />
+  </svg>
+);
+
+const Tableau = (props: SVGProps<SVGSVGElement>) => (
+  <svg {...props} viewBox="0 0 24 24" fill="currentColor">
+    <path fill="#E8762D" d="M11 2h2v4h-2zM11 18h2v4h-2zM2 11h4v2H2zM18 11h4v2h-4zM6.5 6.5h2v2h-2zM15.5 6.5h2v2h-2zM6.5 15.5h2v2h-2zM15.5 15.5h2v2h-2zM10 9h4v6h-4z" />
+  </svg>
+);
+
+const Salesforce = (props: SVGProps<SVGSVGElement>) => (
+  <svg {...props} viewBox="0 0 24 24" fill="#00A1E0">
+    <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/>
+  </svg>
+);
+
+const HubSpot = (props: SVGProps<SVGSVGElement>) => (
+  <svg {...props} viewBox="0 0 24 24" fill="#FF7A59">
+    <path d="M18.8 9.4V6.7l2.1-1.2-1.3-2.3-2.1 1.2c-.7-.4-1.5-.7-2.3-.9V1h-2.7v2.5c-.8.2-1.6.5-2.3.9L8.1 3.2 6.8 5.5l2.1 1.2v2.7c-.5.7-.9 1.5-1.1 2.3H5.3v2.7h2.5c.2.8.6 1.6 1.1 2.3v2.7l2.1 1.2 1.3-2.3-2.1-1.2c.7.4 1.5.7 2.3.9V23h2.7v-2.5c.8-.2 1.6-.5 2.3-.9l2.1 1.2 1.3-2.3-2.1-1.2v-2.7c.5-.7.9-1.5 1.1-2.3h2.5v-2.7h-2.5c-.2-.8-.6-1.6-1.1-2.3zM12 15c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3z"/>
+  </svg>
+);
+
+const Pandas = (props: SVGProps<SVGSVGElement>) => (
+  <svg {...props} viewBox="0 0 24 24" fill="currentColor">
+    <rect x="4" y="3" width="3" height="18" fill="#150458" />
+    <rect x="9" y="7" width="3" height="10" fill="#E70488" />
+    <rect x="14" y="3" width="3" height="18" fill="#00A896" />
+    <rect x="19" y="10" width="3" height="4" fill="#150458" />
+  </svg>
+);
+
+const ScikitLearn = (props: SVGProps<SVGSVGElement>) => (
+  <svg {...props} viewBox="0 0 24 24" fill="none">
+    <circle cx="9" cy="12" r="7" fill="#F7931E" opacity="0.8" />
+    <circle cx="15" cy="12" r="7" fill="#3499CC" opacity="0.8" />
+  </svg>
+);
+
+const SQL = (props: SVGProps<SVGSVGElement>) => (
+  <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <ellipse cx="12" cy="5" rx="9" ry="3" fill="#00758F" />
+    <path d="M21 5v14c0 1.66-4.03 3-9 3s-9-1.34-9-3V5" fill="none" stroke="#00758F" strokeWidth="2" />
+    <path d="M21 12c0 1.66-4.03 3-9 3s-9-1.34-9-3" stroke="#00758F" strokeWidth="2" />
+  </svg>
+);
+
+const LangChain = (props: SVGProps<SVGSVGElement>) => (
+  <svg {...props} viewBox="0 0 24 24" fill="#00A67E">
+    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+  </svg>
+);
+
+const Excel = (props: SVGProps<SVGSVGElement>) => (
+  <svg {...props} viewBox="0 0 24 24" fill="#107C41">
+    <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/>
+    <path d="M14 2v6h6" fill="#185C37"/>
+    <path d="M10 11.5l2 2.5-2 2.5h1.5l1.25-1.75L14 16.5H15.5l-2-2.5 2-2.5H14l-1.25 1.75L11.5 11.5H10z" fill="#FFF"/>
+  </svg>
+);
+
+const C = (props: SVGProps<SVGSVGElement>) => (
+  <svg {...props} viewBox="0 0 24 24" fill="#A8B9CC">
+    <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm4.5 12.3c-.7.8-1.7 1.2-2.8 1.2-2.3 0-4.1-1.7-4.1-4s1.8-4 4.1-4c1.1 0 2.1.4 2.8 1.2l-1.4 1.4c-.4-.4-.9-.6-1.4-.6-1.3 0-2.3 1-2.3 2s1 2 2.3 2c.5 0 1-.2 1.4-.6l1.5 1.4z"/>
+  </svg>
+);
+
+const CPP = (props: SVGProps<SVGSVGElement>) => (
+  <svg {...props} viewBox="0 0 24 24" fill="#00599C">
+    <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm-1 12.3c-.7.8-1.7 1.2-2.8 1.2-2.3 0-4.1-1.7-4.1-4s1.8-4 4.1-4c1.1 0 2.1.4 2.8 1.2l-1.4 1.4c-.4-.4-.9-.6-1.4-.6-1.3 0-2.3 1-2.3 2s1 2 2.3 2c.5 0 1-.2 1.4-.6l1.5 1.4zm3.5-1.8h-1v-1.5h-1.5v-1H13.5V9.5h1v1.5H16v1h-1.5V12.5zm4 0h-1v-1.5h-1.5v-1H17.5V9.5h1v1.5H20v1h-1.5V12.5z"/>
+  </svg>
+);
+
+const Java = (props: SVGProps<SVGSVGElement>) => (
+  <svg {...props} viewBox="0 0 24 24" fill="#5382A1">
+    <path d="M9.1 18.2s-1.4.3-.8.4c1.2.2 2.7.3 4.2.1 1.3-.2 2.4-.6 2.4-.6s-.6.2-1.3.4c-1.9.4-4.2.3-4.5-.3zm-.6 1.8s-1.3.4-.6.5c1.4.2 3.1.3 4.8.1 1.5-.2 2.7-.6 2.7-.6s-.7.3-1.5.4c-2.1.4-4.8.3-5.4-.4zm8.6-4.5s.8.7-.9 1.2c-2.1.7-5.9.8-8.2.2-1-.3-1.6-.7-1.6-.7s.6.3 1.7.5c2.4.4 6 .3 7.8-.3 1.1-.3 1.2-.9 1.2-.9z"/>
+  </svg>
+);
+
+const Vercel = (props: SVGProps<SVGSVGElement>) => (
+  <svg {...props} viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 1L24 22H0L12 1Z" />
+  </svg>
+);
+
+const Jira = (props: SVGProps<SVGSVGElement>) => (
+  <svg {...props} viewBox="0 0 24 24" fill="#0052CC">
+    <path d="M11.53 2c0 2.4 1.97 4.35 4.35 4.35h1.78v1.74c0 2.4 1.97 4.35 4.34 4.35V2h-10.47zm-4.35 4.35c0 2.4 1.97 4.35 4.35 4.35h1.78v1.74c0 2.4 1.97 4.35 4.34 4.35V6.35H7.18zM2.83 10.7c0 2.4 1.97 4.35 4.35 4.35h1.78v1.74c0 2.4 1.97 4.35 4.34 4.35V10.7H2.83z"/>
+  </svg>
+);
+
+export { Expressjs, Nextjs, TypeScript, JavaScript,
   LinkedIn, Nodejs, Python, Docker, Git, MongoDB, 
   PostgreSQL, Firebase, Postman, MySQL, TailwindCSS, 
   React, Django, AmazonWebServices, Supabase, Prisma, 
-  Shadcnui, OpenRouter, OpenClaw, GitHub, HTML5, CSS, Ollama, TanStack, Jest, Playwright, Flask };
+  Shadcnui, OpenRouter, OpenClaw, GitHub, HTML5, CSS, Ollama, TanStack, Jest, Playwright, Flask,
+  PowerBI, Tableau, Salesforce, HubSpot, Pandas, ScikitLearn, SQL, LangChain, Excel, C, CPP, Java, Vercel, Jira };
+
+

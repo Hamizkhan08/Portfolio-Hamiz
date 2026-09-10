@@ -6,9 +6,10 @@ interface ExperienceProps {
     description: string;
     technologies: string[];
     projectLink?: string;
+    certificateLink?: string;
 }
 
-export default function ExperienceCard({ role, company, companyLink, duration, description, technologies, projectLink }: ExperienceProps) {
+export default function ExperienceCard({ role, company, companyLink, duration, description, technologies, projectLink, certificateLink }: ExperienceProps) {
     return (
         <div className="group relative w-full">
             {/* Neubrutalist Experience Box */}
@@ -38,13 +39,25 @@ export default function ExperienceCard({ role, company, companyLink, duration, d
                 </div>
 
                 {/* Company Label */}
-                <div className="font-mono text-sm sm:text-base font-black uppercase text-foreground/80 mb-4 select-none">
-                    {companyLink ? (
-                        <a href={companyLink} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 decoration-2 hover:bg-foreground hover:text-background px-1 transition-all">
-                            {company}
+                <div className="flex flex-wrap items-center justify-between gap-2 font-mono text-sm sm:text-base font-black uppercase text-foreground/80 mb-4 select-none">
+                    <div>
+                        {companyLink ? (
+                            <a href={companyLink} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 decoration-2 hover:bg-foreground hover:text-background px-1 transition-all">
+                                {company}
+                            </a>
+                        ) : (
+                            company
+                        )}
+                    </div>
+                    {certificateLink && (
+                        <a
+                            href={certificateLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-[11px] font-mono font-black text-foreground underline hover:bg-foreground hover:text-background px-2 py-0.5 border border-foreground bg-background shadow-[2px_2px_0px_0px_var(--foreground)] hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[3px_3px_0px_0px_var(--foreground)] active:translate-x-0 active:translate-y-0 transition-all normal-case"
+                        >
+                            View Certificate &gt;
                         </a>
-                    ) : (
-                        company
                     )}
                 </div>
 

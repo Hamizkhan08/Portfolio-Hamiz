@@ -19,7 +19,7 @@ export default function Home() {
                   <span className="w-3 h-3 rounded-full border-2 border-background bg-transparent" />
                 </div>
                 <span className="text-xs font-bold tracking-widest uppercase opacity-90">
-                  ZAYAR_SHEIN.EXE
+                  HAMIZ_KHAN.EXE
                 </span>
                 <div className="text-[10px] sm:text-xs font-bold border-2 border-background bg-background text-foreground px-2 py-0.5 select-none hidden sm:block">
                   SYS_INIT
@@ -37,7 +37,7 @@ export default function Home() {
                 {/* Name */}
                 <div className="space-y-1">
                   <h1 className="text-foreground text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight select-none leading-none">
-                    Zayar Shein<span className="text-foreground/30">.</span>
+                    Hamiz Khan<span className="text-foreground/30">.</span>
                   </h1>
                   <div className="w-24 sm:w-28 h-2.5 bg-foreground mt-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,0.15)]" />
                 </div>
@@ -52,9 +52,10 @@ export default function Home() {
                     <span className="text-foreground mr-2 select-none">&gt;</span>
                     <TypeAnimation
                       sequence={[
-                        'am a Full-Stack Developer.', 2000,
-                        'love building web applications.', 2000,
-                        'enjoy learning new technologies.', 2000
+                        'am a Data Analyst.', 2000,
+                        'build Power BI & Tableau Dashboards.', 2000,
+                        'transform complex data into insights.', 2000,
+                        'develop AI & Machine Learning solutions.', 2000
                       ]}
                       speed={50}
                       style={{ display: 'inline' }}
@@ -65,7 +66,7 @@ export default function Home() {
 
                 {/* Description */}
                 <p className="text-muted-foreground text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl">
-                  Innovative Full-Stack Developer passionate about writing clean, maintainable code and leveraging modern technologies to streamline the transition from idea to production.
+                  Data Analyst with hands-on experience in Python, SQL, and data visualization. Focused on transforming complex datasets into actionable business insights, automating workflows, and applying AI/ML techniques to drive measurable impact.
                 </p>
 
                 {/* Action Buttons */}
@@ -81,7 +82,7 @@ export default function Home() {
                   </Link>
 
                   <a
-                    href="/ZayarShein_Resume.pdf"
+                    href="https://drive.google.com/drive/folders/1ykQm8Cv7Fzx2YWgr-hWtpQ4VPVT0l198?usp=drive_link"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full sm:w-auto cursor-pointer border-3 border-dashed border-foreground bg-card text-foreground text-xs sm:text-sm font-bold uppercase tracking-wider px-6 py-3 rounded-none shadow-[4px_4px_0px_0px_var(--foreground)] hover:bg-foreground hover:text-background hover:border-solid hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[8px_8px_0px_0px_var(--foreground)] active:translate-x-0 active:translate-y-0 active:shadow-none transition-all text-center flex items-center justify-center gap-2"
@@ -94,7 +95,7 @@ export default function Home() {
                 {/* Social Links */}
                 <div className="flex space-x-3 sm:space-x-4 pt-2">
                   <a
-                    href="https://github.com/Sxein"
+                    href="https://github.com/Hamizkhan08"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="GitHub Profile"
@@ -103,7 +104,7 @@ export default function Home() {
                     <AiFillGithub className="size-6" />
                   </a>
                   <a
-                    href="https://www.linkedin.com/in/zayar-shein-980bb6286/"
+                    href="https://www.linkedin.com/in/hamiz-khan-2b5866215"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="LinkedIn Profile"
@@ -112,7 +113,7 @@ export default function Home() {
                     <FaLinkedin className="size-6" />
                   </a>
                   <a
-                    href="mailto:zayarshein.mmdev@gmail.com"
+                    href="mailto:hamizk986@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Email Address"

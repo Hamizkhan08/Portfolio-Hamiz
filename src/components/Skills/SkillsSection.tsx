@@ -1,83 +1,69 @@
-import { Expressjs, Nextjs, TypeScript, JavaScript, Python, 
-    Docker, Git, MongoDB, PostgreSQL, Postman, MySQL, TailwindCSS, 
-    React, Django, AmazonWebServices, Prisma, Supabase, Nodejs, Firebase, 
-    Shadcnui, OpenRouter, OpenClaw, GitHub, HTML5, CSS, 
-    Ollama, TanStack, Playwright, Jest, Flask } from "../ui/DevIcons"
-import SkillCard from "./SkillCard"
-import FadeIn from "../ui/FadeIn"
+import { 
+    Python, SQL, HTML5, CSS, JavaScript, C, CPP, Java,
+    PowerBI, Tableau, Excel, 
+    Pandas, ScikitLearn, 
+    HubSpot, Salesforce, Jira, 
+    Flask, Supabase, Vercel, Git, GitHub 
+} from "../ui/DevIcons";
+import SkillCard from "./SkillCard";
+import FadeIn from "../ui/FadeIn";
 
 const categories = [
     { 
         title: "Languages", 
         skills: [
+            { name: "Python", Icon: Python },
+            { name: "SQL", Icon: SQL },
+            { name: "HTML5", Icon: HTML5 },
+            { name: "CSS", Icon: CSS },
             { name: "JavaScript", Icon: JavaScript },
-            { name: "TypeScript", Icon: TypeScript },
-            { name: "Python", Icon: Python }
+            { name: "C", Icon: C },
+            { name: "C++", Icon: CPP },
+            { name: "Core Java", Icon: Java },
         ] 
     },
     { 
-        title: "Frontend", 
+        title: "Data Visualization & BI", 
         skills: [
-            { name: "HTML5", Icon: HTML5 },
-            { name: "CSS", Icon: CSS },
-            { name: "React.js", Icon: React }, 
-            { name: "Next.js", Icon: Nextjs }, 
-            { name: "TailwindCSS", Icon: TailwindCSS },
-            { name: "TanStack Query", Icon: TanStack },
-            { name: "Zustand", svgPath: "/zustand.svg" },
-            { name: "shadcn/ui", Icon: Shadcnui }
+            { name: "Power BI", Icon: PowerBI },
+            { name: "Tableau", Icon: Tableau },
+            { name: "Excel & DAX", Icon: Excel },
+            { name: "Looker Studio" },
+            { name: "IBM Cognos" },
+            { name: "Matplotlib & Seaborn" }
         ]  
     },
     {
-        title: "Backend",
+        title: "ML & Data Science",
         skills: [
-            { name: "Node.js", Icon: Nodejs },
-            { name: "Express.js", Icon: Expressjs },
-            { name: "Django", Icon: Django },
-            { name: "Flask", Icon: Flask},
-            { name: "Prisma", Icon: Prisma },
+            { name: "Pandas", Icon: Pandas },
+            { name: "NumPy" },
+            { name: "Scikit-learn", Icon: ScikitLearn },
+            { name: "Hugging Face" },
+            { name: "Jupyter Notebook" }
+        ]
+    },
+    {
+        title: "CRM & Business Tools",
+        skills: [
+            { name: "HubSpot CRM", Icon: HubSpot },
+            { name: "Salesforce CRM", Icon: Salesforce },
+            { name: "ASAP CRM" },
+            { name: "Jira", Icon: Jira }
+        ]
+    },
+    {
+        title: "Tools & Deployment",
+        skills: [
+            { name: "Flask", Icon: Flask },
             { name: "Supabase", Icon: Supabase },
-            { name: "Firebase", Icon: Firebase }
-        ]
-    },
-    {
-        title: "Database",
-        skills: [
-            { name: "PostgreSQL", Icon: PostgreSQL },
-            { name: "MongoDB", Icon: MongoDB },
-            { name: "MySQL", Icon: MySQL },
-        ]
-    },
-    {
-        title: "AI & Tools",
-        skills: [
-            { name: "OpenClaw", Icon: OpenClaw },
-            { name: "OpenRouter", Icon: OpenRouter },
-            { name: "Ollama", Icon: Ollama },
-            { name: "RAG"},
+            { name: "Vercel", Icon: Vercel },
+            { name: "Cloudflare" },
             { name: "Git", Icon: Git },
-            { name: "GitHub", Icon: GitHub },
-            { name: "Postman", Icon: Postman },
-            { name: "AWS", Icon: AmazonWebServices }
-        ]
-    },
-    {
-        title: "CI/CD",
-        skills: [
-            { name: "GitHub Actions", Icon: GitHub },
-            { name: "Docker", Icon: Docker },
-            { name: "Jenkins", svgPath: "/jenkins.svg" }
-        ]
-    },
-    {
-        title: "Testing Tools",
-        skills: [
-            { name: "Jest", Icon: Jest },
-            { name: "Mocha", svgPath: "/mocha.svg" },
-            { name: "Playwright", Icon: Playwright },
+            { name: "GitHub", Icon: GitHub }
         ]
     }
-]
+];
 
 export default function Skills() {
     return (

@@ -3,53 +3,48 @@ import FadeIn from "../ui/FadeIn";
 
 const educationJourney = [
     {
-        year: "2019 — 2020",
-        title: "Medicine in Myanmar",
+        year: "2026 — 2028",
+        title: "Master's in Data Analytics",
         institution: {
-            name: "University of Medicine, Mandalay",
-            link: "https://www.ummdy.gov.mm/",
-            tooltipDescription: "One of the prestigious medical universities in Myanmar, known for producing skilled healthcare professionals."
+            name: "Berlin School of Business and Innovation",
+            link: "https://www.berlinsbi.com/",
+            tooltipDescription: "Berlin School of Business and Innovation (BSBI), Berlin, Germany. Specialized in Data Analytics, Business Intelligence, and AI Solutions."
         },
-        degree: "Bachelor of Medicine (M.B.B.S.)",
-        description: "Began pursuing medicine, a path I thought was my calling."
+        degree: "M.Sc. Data Analytics",
+        description: "Specializing in Advanced Data Analytics, Predictive Modeling, Business Intelligence, Big Data Architectures, and Machine Learning."
     },
     {
-        year: "2021 — 2022",
-        title: "Self-Taught Developer",
-        degree: "The Pivot: From Medicine to Code",
-        description: "When the pandemic and political turmoil halted my studies, I taught myself web development through online courses — mastering HTML, CSS, JavaScript, and React."
-    },
-    {
-        year: "2023 — 2026",
-        title: "Information Technology",
+        year: "2022 — 2026",
+        title: "Bachelor's in Computer Engineering",
         institution: {
-            name: "Temasek Polytechnic",
-            link: "https://www.tp.edu.sg/home.html",
-            tooltipDescription: "A leading polytechnic in Singapore, renowned for its industry-focused curriculum and strong emphasis on practical skills."
+            name: "Savitribai Phule Pune University",
+            link: "https://www.unipune.ac.in/",
+            tooltipDescription: "A premier university in Maharashtra, India, known for academic excellence in Computer Engineering and Technology."
         },
-        degree: "Diploma in Information Technology",
+        degree: "B.E. Computer Engineering (CGPA: 9.29 / 10)",
         achievements: {
             honors: [
                 {
-                    name: "Diploma with Merit",
-                    years: "Graduating Class",
-                    tooltipDescription: "An institutional honor awarded to the top 10% of the graduating cohort, recognizing exceptional academic excellence and outstanding performance throughout the diploma program."
+                    name: "Best Outgoing Student 2026",
+                    years: "2026",
+                    tooltipDescription: "Awarded for outstanding academic excellence, technical innovations, leadership, and extracurricular contributions."
                 },
                 {
-                    name: "Director's List",
-                    years: "Year 1 & 2",
-                    tooltipDescription: "An academic honor awarded to the top 10% of the diploma cohort each year, recognizing students with outstanding academic performance."
+                    name: "Final Year Project Award",
+                    years: "2026",
+                    tooltipDescription: "1st Place at Sandip Foundation, 2nd Place at MET Institute & R.H. Sapat College, 3rd Place at GCOERC for AI Skin Disorder Analysis Project."
                 }
             ]
         },
-        description: "Built a strong foundation in software engineering while consistently ranking among the top students."
+        description: "Specialized in Data Analytics, Database Management Systems (DBMS), Machine Learning, Cloud Computing, and Software Engineering."
     }
 ];
 
 const quickStats = [
-    { value: "1~", label: "Years of Experience", accent: "text-foreground" },
-    { value: "3×", label: "Academic Honors", accent: "text-foreground" },
-    { value: "4+", label: "Years Coding", accent: "text-foreground" },
+    { value: "9.29", label: "CGPA Grade", accent: "text-foreground" },
+    { value: "6+", label: "Project Competition Winner", accent: "text-foreground" },
+    { value: "1", label: "Patent Published", accent: "text-foreground" },
+    { value: "1.6+", label: "Years Experience", accent: "text-foreground" },
 ];
 
 export default function About() {
@@ -70,20 +65,20 @@ export default function About() {
           <FadeIn direction="right" delay={0.2}>
             <div className="flex flex-col gap-6 text-left text-foreground bg-card border-4 border-foreground p-6 sm:p-10 shadow-[8px_8px_0px_0px_var(--foreground)]">
               <p className="text-lg leading-relaxed font-medium">
-                Full-Stack Developer specializing in <span className="underline underline-offset-4 decoration-2 decoration-foreground font-bold">React, Next.js, Node.js</span>. I turn ideas into scalable, production-ready web applications.
+                Data Analyst specializing in <span className="underline underline-offset-4 decoration-2 decoration-foreground font-bold">Python, SQL, Power BI, and Machine Learning</span>. I transform complex datasets into actionable business insights and intelligent data products.
               </p>
               <p className="text-lg leading-relaxed font-medium">
-                From medical school in Myanmar to self-taught developer to Singapore's top IT students — I thrive on learning, building, and shipping.
+                With experience in CRM pipeline tracking (HubSpot & Salesforce), automated data workflows, predictive modeling, and patent-published AI systems — I strive to solve real-world problems through data-driven decisions.
               </p>
 
-              {/* Quick Stats - Updated with Neubrutalist boxes */}
-              <div className="grid grid-cols-3 gap-3 mt-4 pt-6 border-t-4 border-foreground">
+              {/* Quick Stats - Neubrutalist boxes */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mt-4 pt-6 border-t-4 border-foreground">
                 {quickStats.map((stat, i) => (
-                  <div key={i} className="text-center bg-background border-2 border-foreground p-3 shadow-[3px_3px_0px_0px_var(--foreground)]">
+                  <div key={i} className="text-center bg-background border-2 border-foreground p-2.5 shadow-[3px_3px_0px_0px_var(--foreground)]">
                     <div className={`text-xl sm:text-2xl font-black ${stat.accent}`}>
                       {stat.value}
                     </div>
-                    <div className="text-[10px] sm:text-xs font-mono font-black uppercase tracking-tight text-muted-foreground mt-1.5 leading-tight">
+                    <div className="text-[10px] sm:text-xs font-mono font-black uppercase tracking-tight text-muted-foreground mt-1 leading-tight">
                       {stat.label}
                     </div>
                   </div>
@@ -98,8 +93,9 @@ export default function About() {
               <div className="relative w-80 h-96 bg-card border-4 border-foreground shadow-[10px_10px_0px_0px_var(--foreground)] p-3 select-none">
                 <div className="w-full h-full border-2 border-foreground overflow-hidden">
                   <img 
-                    src="/profile.jpeg" 
-                    alt="Profile" 
+                    src="/images/profile/profile.jpg" 
+                    alt="Hamiz Khan Profile" 
+                    onError={(e) => { e.currentTarget.src = "/profile.jpeg"; }}
                     className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" 
                   />
                 </div>
@@ -114,17 +110,17 @@ export default function About() {
         <FadeIn>
           <div className="text-center mb-16">
             <span className="font-mono inline-block px-3 py-1.5 text-xs font-black tracking-wider uppercase bg-foreground text-background border-2 border-foreground mb-4 select-none">
-              My Journey
+              Academic Background
             </span>
             <h2 className="text-4xl font-black text-foreground mb-4 uppercase">Education & Growth</h2>
             <div className="w-24 h-1.5 bg-foreground mx-auto mb-4" />
             <p className="text-muted-foreground text-md sm:text-lg max-w-2xl mx-auto font-medium">
-              An unconventional path — from medicine to code, shaped by resilience and curiosity.
+              Academic foundation in Computer Engineering, Data Science, and Machine Learning.
             </p>
           </div>
         </FadeIn>
         
-        {/* Timeline (Refactored to be thick, solid, and left-aligned for maximum card width) */}
+        {/* Timeline */}
         <div className="relative max-w-3xl mx-auto">
           <div className="absolute left-4 sm:left-6 top-0 bottom-0 w-1 bg-foreground" />
           

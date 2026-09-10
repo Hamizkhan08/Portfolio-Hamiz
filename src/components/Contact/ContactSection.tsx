@@ -5,7 +5,8 @@ import FadeIn from "@/components/ui/FadeIn";
 
 export default function Contact() {
     const [copied, setCopied] = useState(false);
-    const email = "zayarshein.mmdev@gmail.com";
+    const email = "hamizk986@gmail.com";
+    const phone = "(+91) 7083186153";
 
     const handleCopy = () => {
         navigator.clipboard.writeText(email);
@@ -24,7 +25,7 @@ export default function Contact() {
                         <h2 className="text-4xl md:text-5xl font-black tracking-tight text-foreground select-none uppercase font-mono mb-4">Contact Me</h2>
                         <div className="w-20 h-1.5 bg-foreground mx-auto mb-4" />
                         <p className="text-md sm:text-lg text-muted-foreground max-w-2xl mx-auto font-medium">
-                            I'm currently looking for new opportunities. Whether you have a question, a project to discuss, or just want to say hi, I'll try my best to get back to you!
+                            I'm actively seeking data analytics and AI/ML opportunities. Whether you have a project to discuss, a position open, or just want to say hi, feel free to reach out!
                         </p>
                     </div>
                 </FadeIn>
@@ -38,19 +39,20 @@ export default function Contact() {
                                 <MdEmail className="size-10 text-foreground" />
                             </div>
                             <h3 className="text-2xl font-black mb-3">Send me an email</h3>
-                            <p className="text-muted-foreground font-medium text-sm leading-relaxed mb-8 max-w-sm">
-                                The best way to reach me. I typically respond within 24 hours.
+                            <p className="text-muted-foreground font-medium text-sm leading-relaxed mb-6 max-w-sm">
+                                Direct email contact for collaborations and opportunities.
                             </p>
                             <a 
                                 href={`mailto:${email}`}
-                                className="w-full sm:w-auto cursor-pointer border-3 border-foreground bg-card text-foreground font-mono text-sm sm:text-base font-bold uppercase tracking-wider px-8 py-3.5 rounded-none shadow-[4px_4px_0px_var(--foreground)] hover:bg-foreground hover:text-background hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[8px_8px_0px_var(--foreground)] active:translate-x-0 active:translate-y-0 active:shadow-none transition-all text-center flex items-center justify-center gap-2"
+                                className="w-full sm:w-auto cursor-pointer border-3 border-foreground bg-card text-foreground font-mono text-sm sm:text-base font-bold uppercase tracking-wider px-8 py-3.5 rounded-none shadow-[4px_4px_0px_var(--foreground)] hover:bg-foreground hover:text-background hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[8px_8px_0px_var(--foreground)] active:translate-x-0 active:translate-y-0 active:shadow-none transition-all text-center flex items-center justify-center gap-2 mb-4"
                             >
                                 Say Hello &gt;
                             </a>
+                            <span className="font-mono text-xs font-bold text-muted-foreground">Phone: {phone} • Nashik, India</span>
                         </div>
                     </FadeIn>
                     
-                    {/* Right Card: Interactive Command Console Terminal Block */}
+                    {/* Right Card: Command Console Terminal Block */}
                     <FadeIn delay={0.4} direction="left">
                         <div className="bg-card text-foreground p-8 h-full rounded-none border-4 border-foreground shadow-[6px_6px_0px_var(--foreground)] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[10px_10px_0px_var(--foreground)] active:translate-x-0 active:translate-y-0 active:shadow-[6px_6px_0px_var(--foreground)] transition-all duration-300 flex flex-col justify-center">
                             
@@ -86,22 +88,22 @@ export default function Contact() {
                                 {/* External profile handles */}
                                 <div className="flex flex-wrap gap-4 pt-4 mt-2 border-t-2 border-dashed border-foreground/15">
                                     <a 
-                                        href="https://github.com/Sxein" 
+                                        href="https://github.com/Hamizkhan08" 
                                         target="_blank" 
                                         rel="noopener noreferrer" 
                                         className="text-foreground font-black underline underline-offset-4 decoration-2 hover:bg-foreground hover:text-background px-1 transition-all flex items-center gap-2 text-xs"
                                     >
                                         <FaGithub size={16} />
-                                        <span>github.com/Sxein</span>
+                                        <span>github.com/Hamizkhan08</span>
                                     </a>
                                     <a 
-                                        href="https://www.linkedin.com/in/zayar-shein-980bb6286/" 
+                                        href="https://www.linkedin.com/in/hamiz-khan-2b5866215" 
                                         target="_blank" 
                                         rel="noopener noreferrer" 
                                         className="text-foreground font-black underline underline-offset-4 decoration-2 hover:bg-foreground hover:text-background px-1 transition-all flex items-center gap-2 text-xs"
                                     >
                                         <FaLinkedin size={16} />
-                                        <span>linkedin.com/in/zayar</span>
+                                        <span>linkedin.com/in/hamiz-khan</span>
                                     </a>
                                 </div>
                             </div>
@@ -111,7 +113,7 @@ export default function Contact() {
 
                 {/* Footer Section */}
                 <footer className="mt-24 text-center font-mono text-xs sm:text-sm font-black border-t-4 border-foreground pt-8 select-none text-muted-foreground uppercase tracking-wider">
-                    <p>Copyright © 2026 Zayar Shein. All rights reserved.</p>
+                    <p>Copyright © 2026 Hamiz Khan. All rights reserved.</p>
                 </footer>
             </div>
         </section>
